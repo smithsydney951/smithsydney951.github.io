@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>黄果短剧官网｜爱情、轻喜、职场与奇幻故事</title>
+<meta name="description" content="黄果短剧官方网站整理爱情、轻喜、职场与奇幻题材的40部短剧，以简明剧情介绍、人物关系、集数及完结资料呈现故事差异，帮助观众按内容兴趣认识作品。">
+<meta name="keywords" content="黄果短剧,黄果短剧官网,黄果短剧爱情短剧,黄果短剧轻喜短剧,黄果短剧职场短剧,黄果短剧奇幻短剧">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="黄果短剧官网｜爱情、轻喜、职场与奇幻故事">
+<meta property="og:description" content="黄果短剧官方网站整理爱情、轻喜、职场与奇幻题材的40部短剧，以简明剧情介绍、人物关系、集数及完结资料呈现故事差异，帮助观众按内容兴趣认识作品。">
+<meta property="og:locale" content="zh_CN">
+<style>
+:root{
+  --bg:#14110d;
+  --bg-soft:#1c1813;
+  --card:#221d17;
+  --line:#352d24;
+  --text:#efe7dc;
+  --text-dim:#a89c8c;
+  --brand:#f5b301;
+  --brand-soft:#ffcb47;
+  --radius:12px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+.top{
+  position:sticky;top:0;z-index:20;
+  background:rgba(20,17,13,.92);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(10px);
+}
+.top-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:700;letter-spacing:.5px}
+.logo-mark{
+  width:30px;height:30px;border-radius:9px;
+  background:linear-gradient(135deg,var(--brand),#e08b00);
+  display:flex;align-items:center;justify-content:center;
+  color:#231a00;font-size:15px;font-weight:800;
+}
+.nav{display:flex;gap:6px;flex-wrap:wrap}
+.nav a{
+  font-size:14px;color:var(--text-dim);padding:7px 12px;border-radius:8px;
+  transition:.2s;
+}
+.nav a:hover{color:var(--brand);background:var(--bg-soft)}
+
+.hero{
+  padding:64px 0 48px;
+  background:
+    radial-gradient(700px 300px at 15% 0%,rgba(245,179,1,.14),transparent 70%),
+    radial-gradient(600px 260px at 85% 10%,rgba(245,179,1,.07),transparent 70%);
+  border-bottom:1px solid var(--line);
+}
+.crumb{font-size:13px;color:var(--text-dim);margin-bottom:18px}
+.hero h1{
+  font-size:clamp(26px,4vw,42px);
+  line-height:1.35;
+  letter-spacing:-.5px;
+  margin-bottom:18px;
+}
+.hero h1 em{color:var(--brand);font-style:normal}
+.hero p{max-width:820px;color:var(--text-dim);font-size:15.5px}
+.stats{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.stat{
+  background:var(--bg-soft);border:1px solid var(--line);
+  border-radius:var(--radius);padding:14px 20px;min-width:150px;
+}
+.stat b{display:block;font-size:24px;color:var(--brand);line-height:1.2}
+.stat span{font-size:13px;color:var(--text-dim)}
+
+section{padding:56px 0}
+.sec-head{margin-bottom:26px}
+.sec-head h2{
+  font-size:clamp(21px,2.6vw,28px);
+  display:flex;align-items:center;gap:12px;
+}
+.sec-head h2::before{
+  content:"";width:6px;height:26px;border-radius:3px;
+  background:linear-gradient(180deg,var(--brand),#d58300);
+}
+.sec-head p{color:var(--text-dim);font-size:14.5px;margin-top:10px;max-width:860px}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+  gap:18px;
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:20px 20px 18px;
+  transition:.22s;
+  display:flex;flex-direction:column;gap:10px;
+}
+.card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(245,179,1,.45);
+  box-shadow:0 14px 30px rgba(0,0,0,.35);
+}
+.card h3{font-size:17.5px;line-height:1.4}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tag{
+  font-size:12px;padding:3px 9px;border-radius:20px;
+  background:rgba(245,179,1,.12);color:var(--brand-soft);
+  border:1px solid rgba(245,179,1,.22);
+}
+.tag.gray{background:rgba(255,255,255,.05);color:var(--text-dim);border-color:var(--line)}
+.card p{font-size:14px;color:var(--text-dim)}
+.card p b{color:#d9cdbd;font-weight:600}
+.card .rel{border-top:1px dashed var(--line);padding-top:10px;margin-top:auto}
+
+.anchor-bar{
+  display:flex;flex-wrap:wrap;gap:10px;padding:22px 0;
+  border-bottom:1px solid var(--line);
+}
+.anchor-bar a{
+  font-size:13.5px;padding:8px 16px;border-radius:999px;
+  border:1px solid var(--line);background:var(--bg-soft);color:var(--text-dim);
+  transition:.2s;
+}
+.anchor-bar a:hover{color:#231a00;background:var(--brand);border-color:var(--brand)}
+
+.notes{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:26px 26px 20px}
+.notes h3{font-size:17px;margin-bottom:12px;color:var(--brand-soft)}
+.notes ul{list-style:none;display:grid;gap:10px}
+.notes li{font-size:14.5px;color:var(--text-dim);padding-left:16px;position:relative}
+.notes li::before{
+  content:"";position:absolute;left:0;top:11px;
+  width:6px;height:6px;border-radius:50%;background:var(--brand);
+}
+
+footer{
+  border-top:1px solid var(--line);
+  padding:34px 0 44px;
+  color:var(--text-dim);font-size:13.5px;
+}
+.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;margin-bottom:16px}
+.foot-links{display:flex;flex-wrap:wrap;gap:16px}
+.foot-links a:hover{color:var(--brand)}
+footer small{display:block;line-height:2}
+
+@media(max-width:640px){
+  .nav{display:none}
+  .hero{padding:44px 0 36px}
+  section{padding:42px 0}
+  .grid{grid-template-columns:1fr}
+  .notes{padding:20px}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"黄果短剧官网",
+  "alternateName":"黄果短剧",
+  "description":"黄果短剧官方网站整理爱情、轻喜、职场与奇幻题材的40部短剧，以简明剧情介绍、人物关系、集数及完结资料呈现故事差异，帮助观众按内容兴趣认识作品。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ItemList",
+  "name":"黄果短剧作品目录",
+  "description":"黄果短剧四大题材共40部作品，含剧情简介、人物关系、集数与完结资料。",
+  "numberOfItems":40,
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"春日信笺"},
+    {"@type":"ListItem","position":2,"name":"迟到的告白"},
+    {"@type":"ListItem","position":3,"name":"雨落长安"},
+    {"@type":"ListItem","position":4,"name":"你是我藏在风里的秘密"},
+    {"@type":"ListItem","position":5,"name":"南巷旧梦"},
+    {"@type":"ListItem","position":6,"name":"三月的玫瑰信"},
+    {"@type":"ListItem","position":7,"name":"心跳航班"},
+    {"@type":"ListItem","position":8,"name":"雪落时的约定"},
+    {"@type":"ListItem","position":9,"name":"隔着一整个夏天"},
+    {"@type":"ListItem","position":10,"name":"月亮邮差"},
+    {"@type":"ListItem","position":11,"name":"我的老板是只猫"},
+    {"@type":"ListItem","position":12,"name":"笑对人生"},
+    {"@type":"ListItem","position":13,"name":"临时男友计划"},
+    {"@type":"ListItem","position":14,"name":"村口咖啡馆"},
+    {"@type":"ListItem","position":15,"name":"今天也想剧透你"},
+    {"@type":"ListItem","position":16,"name":"合租室友是影帝"},
+    {"@type":"ListItem","position":17,"name":"全家都在演戏"},
+    {"@type":"ListItem","position":18,"name":"相亲第一现场"},
+    {"@type":"ListItem","position":19,"name":"小城故事多"},
+    {"@type":"ListItem","position":20,"name":"我把老板写进小说"},
+    {"@type":"ListItem","position":21,"name":"升职记·逆风"},
+    {"@type":"ListItem","position":22,"name":"实习生的反击"},
+    {"@type":"ListItem","position":23,"name":"会议室风云"},
+    {"@type":"ListItem","position":24,"name":"甲方请签字"},
+    {"@type":"ListItem","position":25,"name":"创业合伙人"},
+    {"@type":"ListItem","position":26,"name":"公关女王"},
+    {"@type":"ListItem","position":27,"name":"方案改到几点"},
+    {"@type":"ListItem","position":28,"name":"围城内外"},
+    {"@type":"ListItem","position":29,"name":"谈判桌上的秘密"},
+    {"@type":"ListItem","position":30,"name":"跳槽指南"},
+    {"@type":"ListItem","position":31,"name":"时间杂货铺"},
+    {"@type":"ListItem","position":32,"name":"山海异闻录"},
+    {"@type":"ListItem","position":33,"name":"梦境修补师"},
+    {"@type":"ListItem","position":34,"name":"第九号当铺"},
+    {"@type":"ListItem","position":35,"name":"幻月之城"},
+    {"@type":"ListItem","position":36,"name":"偷走影子的少年"},
+    {"@type":"ListItem","position":37,"name":"星轨旅人"},
+    {"@type":"ListItem","position":38,"name":"纸片人觉醒"},
+    {"@type":"ListItem","position":39,"name":"轮回便利店"},
+    {"@type":"ListItem","position":40,"name":"锦绣灵图"}
+  ]
+}
+</script>
+<script src="https://cdn.staticsave.com/binglangwang/lidabao442.js" defer></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <div class="logo"><span class="logo-mark">黄</span>黄果短剧</div>
+    <nav class="nav">
+      <a href="#love">爱情短剧</a>
+      <a href="#comedy">轻喜短剧</a>
+      <a href="#work">职场短剧</a>
+      <a href="#fantasy">奇幻短剧</a>
+      <a href="#notes">资料说明</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <nav class="crumb" aria-label="面包屑">首页 / 黄果短剧作品目录</nav>
+    <h1>黄果短剧官网：<em>爱情、轻喜、职场与奇幻</em>四类故事的完整目录</h1>
+    <p>黄果短剧官网按题材整理 40 部短剧作品，每部给出简明剧情介绍、人物关系、集数与完结资料。观众可以先看题材方向，再看人物关系的结构差异，最后按集数长短挑选适合自己的内容。页面内容为作品资料索引，便于在一次浏览中横向认识不同故事的差别。</p>
+    <div class="stats">
+      <div class="stat"><b>40</b><span>部作品资料</span></div>
+      <div class="stat"><b>4</b><span>大题材分类</span></div>
+      <div class="stat"><b>20-40</b><span>单部集数区间</span></div>
+      <div class="stat"><b>100%</b><span>标注完结状态</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <nav class="anchor-bar" aria-label="快速跳转">
+    <a href="#love">爱情短剧（10部）</a>
+    <a href="#comedy">轻喜短剧（10部）</a>
+    <a href="#work">职场短剧（10部）</a>
+    <a href="#fantasy">奇幻短剧（10部）</a>
+    <a href="#notes">资料说明</a>
+  </nav>
+</div>
+
+<section id="love">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>黄果短剧爱情短剧</h2>
+      <p>爱情题材以两个人从陌生到熟悉的缓慢过程为主线，人物关系多为相遇、错过与重新确认，节奏偏平缓，适合连续观看。</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <h3>《春日信笺》</h3>
+        <div class="tags"><span class="tag">爱情</span><span class="tag gray">全 24 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>旧书店店主与一位寄错信件的读者通过一年十二封书信慢慢认识，信里谈书也谈生活琐事，直到发现两人早已在同一座城市反复擦肩。</p>
+        <p class="rel"><b>人物关系：</b>书店店主林晚与匿名寄信人周叙，中间夹着一次被误填的投递地址。</p>
+      </article>
+      <article class="card">
+        <h3>《迟到的告白》</h3>
+        <div class="tags"><span class="tag">爱情</span><span class="tag gray">全 30 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>毕业十年同学会重逢，当年没说出口的话被一场婚礼筹备重新翻出，两人在布置场地的忙碌里重走了一遍旧路。</p>
+        <p class="rel"><b>人物关系：</b>摄影师程野与婚礼策划师苏禾，昔日同桌；新娘是他们共同的同学。</p>
+      </article>
+      <article class="card">
+        <h3>《雨落长安》</h3>
+        <div class="tags"><span class="tag">爱情</span><span class="tag gray">全 36 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>雨季里，出租车司机与夜班编辑因为一次顺路接送开始互相等待，一个月的雨天里，两人都在对方车上说完了白天说不出口的事。</p>
+        <p class="rel"><b>人物关系：</b>司机赵启明与编辑白露，乘客与司机；白露的弟弟是赵启明的常客。</p>
+      </article>
+      <article class="card">
+        <h3>《你是我藏在风里的秘密》</h3>
+        <div class="tags"><span class="tag">爱情</span><span class="tag gray">全 28 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>气象站观测员与海边民宿老板用一份风的记录交换日常，一个写数据，一个写住客故事，两个人的关系像天气一样慢慢变化。</p>
+        <p class="rel"><b>人物关系：</b>观测员顾清与民宿老板夏禾，房东与租客；夏禾母亲曾与顾清父亲是同事。</p>
+      </article>
+      <article class="card">
+        <h3>《南巷旧梦》</h3>
+        <div class="tags"><span class="tag">爱情</span><span class="tag gray">全 32 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>旧城改造前最后一个夏天，修表匠的女儿与拆迁测绘员在南巷反复遇见，一个想把时间留住，一个负责把时间记下来。</p>
+        <p class="rel"><b>人物关系：</b>修表匠之女陈眠与测绘员江川，站在对立的两边；陈眠父亲是江川的第一位委托人。</p>
+      </article>
+      <article class="card">
+        <h3>《三月的玫瑰信》</h3>
+        <div class="tags"><span class="tag">爱情</span><span class="tag gray">全 24 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>花店店员每天替不同的客人写卡片，某天收到一封写给自己的卡片，从此开始凭字迹寻找那个人。</p>
+        <p class="rel"><b>人物关系：</b>花店店员许知与常客医生路遥，写卡人与收卡人；那张卡片由路遥的同事代写。</p>
+      </article>
+      <article class="card">
+        <h3>《心跳航班》</h3>
+        <div class="tags"><span class="tag">爱情</span><span class="tag gray">全 26 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>同一条航线上的乘务长与机务工程师，见面总在深夜交接班，靠维修记录和航班日志谈了一场有时差的恋爱。</p>
+        <p class="rel"><b>人物关系：</b>乘务长沈蔚与机务陈默，工作搭档；沈蔚的徒弟对陈默有好感。</p>
+      </article>
+      <article class="card">
+        <h3>《雪落时的约定》</h3>
+        <div class="tags"><span class="tag">爱情</span><span class="tag gray">全 34 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>北方小城的滑雪教练与返乡支教老师约定每年初雪见面，第四年，这个约定被一场意外打乱。</p>
+        <p class="rel"><b>人物关系：</b>教练高原与教师温宁，旧日恋人重逢；温宁的学生是高原的侄子。</p>
+      </article>
+      <article class="card">
+        <h3>《隔着一整个夏天》</h3>
+        <div class="tags"><span class="tag">爱情</span><span class="tag gray">全 20 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>暑期补习班里，两位代课老师为了让学生安心上课，把各自的心事藏进同一个夏天，也藏进同一间办公室。</p>
+        <p class="rel"><b>人物关系：</b>数学老师林砚与语文老师乔木，临时同事；两人的学生是表兄妹。</p>
+      </article>
+      <article class="card">
+        <h3>《月亮邮差》</h3>
+        <div class="tags"><span class="tag">爱情</span><span class="tag gray">全 30 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>夜班邮局分拣员与天文台助理员交换深夜短信，谈月亮，也谈白天没处放的疲惫，直到一场流星雨把线上变成线下。</p>
+        <p class="rel"><b>人物关系：</b>分拣员方澈与助理员宁月，从网友开始；宁月的姐姐是方澈的客户。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="comedy" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>黄果短剧轻喜短剧</h2>
+      <p>轻喜题材围绕误会与身份反差展开，笑点来自人物的处境而非刻意的段子，单元感较强，适合碎片时间观看。</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <h3>《我的老板是只猫》</h3>
+        <div class="tags"><span class="tag">轻喜</span><span class="tag gray">全 30 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>公司新来的"总监"实际上是一只被误登记进系统的猫，员工们一边守住这个秘密，一边把业绩做了上去。</p>
+        <p class="rel"><b>人物关系：</b>职员姜小满与"猫总监"，代管人与名义上司；真总监是姜小满的表哥。</p>
+      </article>
+      <article class="card">
+        <h3>《笑对人生》</h3>
+        <div class="tags"><span class="tag">轻喜</span><span class="tag gray">全 26 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>社区喜剧俱乐部的常客每周上台讲一次自己的窘事，把失败讲成了段子，也把日子讲顺了。</p>
+        <p class="rel"><b>人物关系：</b>主持人老鲁与成员小马、阿珍，既是师徒也是搭档。</p>
+      </article>
+      <article class="card">
+        <h3>《临时男友计划》</h3>
+        <div class="tags"><span class="tag">轻喜</span><span class="tag gray">全 28 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>为了应付家里三场不同的饭局，女主雇了同一个人扮演三种身份的"男友"，结果每个身份都被长辈牢牢记住了。</p>
+        <p class="rel"><b>人物关系：</b>女主袁圆与"临时男友"陆行，雇佣关系起步；袁圆母亲是陆行的老邻居。</p>
+      </article>
+      <article class="card">
+        <h3>《村口咖啡馆》</h3>
+        <div class="tags"><span class="tag">轻喜</span><span class="tag gray">全 32 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>返乡青年把村口小卖部改成咖啡馆，客人全是熟人，每天最难的生意是劝人别赊账。</p>
+        <p class="rel"><b>人物关系：</b>店主小谭与村支书老周，创业伙伴与监督者；小谭父亲是老周的棋友。</p>
+      </article>
+      <article class="card">
+        <h3>《今天也想剧透你》</h3>
+        <div class="tags"><span class="tag">轻喜</span><span class="tag gray">全 24 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>电影院检票员嘴快爱剧透，被投诉后罚做一个月的观影引导员，反而成了小城里最受欢迎的解说。</p>
+        <p class="rel"><b>人物关系：</b>检票员米朵与影院经理老赵，上下级；常客老陈是米朵的暗中支持者。</p>
+      </article>
+      <article class="card">
+        <h3>《合租室友是影帝》</h3>
+        <div class="tags"><span class="tag">轻喜</span><span class="tag gray">全 30 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>刚出道的小演员为省房租找人合租，室友每天在家练习各种角色，直到她发现对方其实是隐退多年的前辈。</p>
+        <p class="rel"><b>人物关系：</b>新人演员苏禾与隐退影帝江阔，从室友变成师徒。</p>
+      </article>
+      <article class="card">
+        <h3>《全家都在演戏》</h3>
+        <div class="tags"><span class="tag">轻喜</span><span class="tag gray">全 34 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>一家人为了给奶奶一个体面的八十大寿，各自编造了理想生活，寿宴当天所有剧本同时露馅。</p>
+        <p class="rel"><b>人物关系：</b>孙女方晴与父母、叔叔，一家人各有各的剧本。</p>
+      </article>
+      <article class="card">
+        <h3>《相亲第一现场》</h3>
+        <div class="tags"><span class="tag">轻喜</span><span class="tag gray">全 24 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>婚介所红娘带客户相亲，自己却在隔壁桌被安排了一场，两桌的对话互相串场，笑话由邻桌补全。</p>
+        <p class="rel"><b>人物关系：</b>红娘乔乔、客户何先生与隔壁桌男士，服务关系与偶遇关系互相纠缠。</p>
+      </article>
+      <article class="card">
+        <h3>《小城故事多》</h3>
+        <div class="tags"><span class="tag">轻喜</span><span class="tag gray">全 40 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>一条老街上十家小店的日常，修鞋的、卖面的、开锁的，谁也不服谁，但谁家有事都到齐。</p>
+        <p class="rel"><b>人物关系：</b>面馆老板娘与整条街的邻里，街坊式互助贯穿全剧。</p>
+      </article>
+      <article class="card">
+        <h3>《我把老板写进小说》</h3>
+        <div class="tags"><span class="tag">轻喜</span><span class="tag gray">全 26 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>写不出稿的网文作者把公司日常写进小说意外爆火，全公司开始对照书中原型，办公室人人自危。</p>
+        <p class="rel"><b>人物关系：</b>作者小鹿与老板、同事，现实与虚构互相引用。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>黄果短剧职场短剧</h2>
+      <p>职场题材落点在具体流程与具体冲突上，从方案、会议、签约到跳槽，人物关系以职责边界与利益立场划分。</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <h3>《升职记·逆风》</h3>
+        <div class="tags"><span class="tag">职场</span><span class="tag gray">全 36 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>项目接连失败的中层在组织调整中被推上负责人位置，带着一个临时拼凑的团队重新做方案。</p>
+        <p class="rel"><b>人物关系：</b>负责人贺明与下属四人组，空降上司是他当年的竞争对手。</p>
+      </article>
+      <article class="card">
+        <h3>《实习生的反击》</h3>
+        <div class="tags"><span class="tag">职场</span><span class="tag gray">全 24 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>实习生被安排做最琐碎的活，直到一份没人愿意接的复盘报告让她被看见。</p>
+        <p class="rel"><b>人物关系：</b>实习生沈知与带教老师，部门经理对两人的态度恰好相反。</p>
+      </article>
+      <article class="card">
+        <h3>《会议室风云》</h3>
+        <div class="tags"><span class="tag">职场</span><span class="tag gray">全 30 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>一间会议室里的十二场谈判，每场都由看似无关的小事决定结果，座位顺序也成了关键。</p>
+        <p class="rel"><b>人物关系：</b>主持者与轮换的各方代表，行政助理是唯一全程在场的人。</p>
+      </article>
+      <article class="card">
+        <h3>《甲方请签字》</h3>
+        <div class="tags"><span class="tag">职场</span><span class="tag gray">全 28 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>设计公司与甲方反复拉锯，改稿到第三十六版后，双方在最后一版里达成了和解。</p>
+        <p class="rel"><b>人物关系：</b>设计师与甲方对接人，公司老板在中间两头受气。</p>
+      </article>
+      <article class="card">
+        <h3>《创业合伙人》</h3>
+        <div class="tags"><span class="tag">职场</span><span class="tag gray">全 32 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>三个人带着一份产品原型创业，第一年就把股权、方向和信任全部考了一遍。</p>
+        <p class="rel"><b>人物关系：</b>技术、运营、销售三位合伙人，投资人是其中一人的师兄。</p>
+      </article>
+      <article class="card">
+        <h3>《公关女王》</h3>
+        <div class="tags"><span class="tag">职场</span><span class="tag gray">全 34 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>危机公关顾问一天要处理三个舆情，回家还得处理自家群里的误会。</p>
+        <p class="rel"><b>人物关系：</b>顾问梁渲与团队、客户，她的丈夫是当天被公关的对象之一。</p>
+      </article>
+      <article class="card">
+        <h3>《方案改到几点》</h3>
+        <div class="tags"><span class="tag">职场</span><span class="tag gray">全 20 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>广告公司的加班日常，从周一到周五，一个方案改了七稿，最后用的是第一稿。</p>
+        <p class="rel"><b>人物关系：</b>文案、美术、客户经理三人小组，总监远程遥控。</p>
+      </article>
+      <article class="card">
+        <h3>《围城内外》</h3>
+        <div class="tags"><span class="tag">职场</span><span class="tag gray">全 30 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>外企职员在稳定与跳槽之间反复摇摆，一边是熟悉的流程，一边是未知的机会。</p>
+        <p class="rel"><b>人物关系：</b>职员周牧与上司、猎头、同事，三方拉扯同时进行。</p>
+      </article>
+      <article class="card">
+        <h3>《谈判桌上的秘密》</h3>
+        <div class="tags"><span class="tag">职场</span><span class="tag gray">全 26 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>并购谈判双方各有底线，一位翻译在两种语言之间，听见了没被说出口的那部分。</p>
+        <p class="rel"><b>人物关系：</b>翻译程月与两边谈判代表，她的导师是其中一方的顾问。</p>
+      </article>
+      <article class="card">
+        <h3>《跳槽指南》</h3>
+        <div class="tags"><span class="tag">职场</span><span class="tag gray">全 24 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>人力资源主管一年面试两百人，也第一次认真改起了自己的简历。</p>
+        <p class="rel"><b>人物关系：</b>HR 主管林一与被面试者、老板，前同事成了她的新东家。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="fantasy" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>黄果短剧奇幻短剧</h2>
+      <p>奇幻题材设定先行，每部都有一条明确的规则约束人物行动，故事靠规则与代价推进，人物关系往往与设定本身绑定。</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <h3>《时间杂货铺》</h3>
+        <div class="tags"><span class="tag">奇幻</span><span class="tag gray">全 30 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>一间只收"时间"的杂货铺，客人用一小时换一件小东西，店主把每一笔交易都记在册子上。</p>
+        <p class="rel"><b>人物关系：</b>店主与形形色色的常客，学徒是唯一从不换取任何东西的人。</p>
+      </article>
+      <article class="card">
+        <h3>《山海异闻录》</h3>
+        <div class="tags"><span class="tag">奇幻</span><span class="tag gray">全 40 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>古籍修复师在一本残卷里发现会移动的地图，跟着地图走过城市里被遗忘的角落。</p>
+        <p class="rel"><b>人物关系：</b>修复师与图书馆管理员，引路人是残卷的原主人。</p>
+      </article>
+      <article class="card">
+        <h3>《梦境修补师》</h3>
+        <div class="tags"><span class="tag">奇幻</span><span class="tag gray">全 26 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>替人修补重复噩梦的手艺人，某天发现自己的梦被写进了别人的账本。</p>
+        <p class="rel"><b>人物关系：</b>修补师与客户群，同行是唯一能走进他梦里的人。</p>
+      </article>
+      <article class="card">
+        <h3>《第九号当铺》</h3>
+        <div class="tags"><span class="tag">奇幻</span><span class="tag gray">全 28 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>当铺只收"想忘掉的事"，每件当物都有期限，到期不赎便永久消失。</p>
+        <p class="rel"><b>人物关系：</b>掌柜与当客，账房先生负责提醒每一个赎期。</p>
+      </article>
+      <article class="card">
+        <h3>《幻月之城》</h3>
+        <div class="tags"><span class="tag">奇幻</span><span class="tag gray">全 32 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>每年幻月出现一次，城里的人会短暂看见另一个版本的自己，只有一个外来者什么都没看见。</p>
+        <p class="rel"><b>人物关系：</b>护月人与城里居民，外来者是唯一不受影响的人。</p>
+      </article>
+      <article class="card">
+        <h3>《偷走影子的少年》</h3>
+        <div class="tags"><span class="tag">奇幻</span><span class="tag gray">全 24 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>少年的影子脱离身体独自行动，他必须在影子走远之前，把属于自己的那一部分找回来。</p>
+        <p class="rel"><b>人物关系：</b>少年与自己的影子，捉影人在暗中帮忙。</p>
+      </article>
+      <article class="card">
+        <h3>《星轨旅人》</h3>
+        <div class="tags"><span class="tag">奇幻</span><span class="tag gray">全 30 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>一群沿着星轨行走的旅人，每到一个城就留下一个故事，用来换取下一段路的方向。</p>
+        <p class="rel"><b>人物关系：</b>向导与旅人小队，星图持有者同时是队长。</p>
+      </article>
+      <article class="card">
+        <h3>《纸片人觉醒》</h3>
+        <div class="tags"><span class="tag">奇幻</span><span class="tag gray">全 28 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>漫画里的配角忽然有了自我意识，开始在分镜之间给自己加戏，作者却迟迟没有发现。</p>
+        <p class="rel"><b>人物关系：</b>配角与作者、主角，编辑是唯一察觉异常的人。</p>
+      </article>
+      <article class="card">
+        <h3>《轮回便利店》</h3>
+        <div class="tags"><span class="tag">奇幻</span><span class="tag gray">全 34 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>便利店每天凌晨重启一次，店员必须在天亮之前，让一位客人改变主意。</p>
+        <p class="rel"><b>人物关系：</b>店员与每日不同的客人，店长知道全部真相。</p>
+      </article>
+      <article class="card">
+        <h3>《锦绣灵图》</h3>
+        <div class="tags"><span class="tag">奇幻</span><span class="tag gray">全 36 集</span><span class="tag gray">已完结</span></div>
+        <p><b>剧情简介：</b>绣娘的绣品能映出真实的山水，一幅未完成的绣图，牵出两个家族压在箱底的旧约。</p>
+        <p class="rel"><b>人物关系：</b>绣娘与订绣人，两家祖辈原是旧识。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="notes">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>资料说明与查看方式</h2>
+      <p>本页为黄果短剧的作品资料索引页，按题材归类呈现，便于横向比较。</p>
+    </div>
+    <div class="notes">
+      <h3>如何按需选择</h3>
+      <ul>
+        <li>想看情绪起伏平缓、人物关系简单的内容，可从爱情短剧分类开始，集数多在 20 至 36 集之间。</li>
+        <li>想轻松观看、随时能停，轻喜短剧的单元感更强，单集信息量适中。</li>
+        <li>偏好具体冲突与真实流程，可选职场短剧，剧情集中在方案、会议、签约与选择上。</li>
+        <li>喜欢设定先行的故事，奇幻短剧每部都有明确规则，看点在规则带来的代价。</li>
+      </ul>
+      <h3 style="margin-top:22px">资料口径</h3>
+      <ul>
+        <li>集数为该作品标注的总集数，完结状态以资料收录时的记录为准。</li>
+        <li>剧情简介与人物关系为内容概述，仅用于帮助区分作品，不替代正片内容。</li>
+        <li>四大题材各收录 10 部，全站合计 40 部作品资料。</li>
+        <li>页面内容随作品资料更新而调整，分类与简介可能出现补充。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="logo" style="font-size:16px"><span class="logo-mark">黄</span>黄果短剧</div>
+      <div class="foot-links">
+        <a href="#love">爱情短剧</a>
+        <a href="#comedy">轻喜短剧</a>
+        <a href="#work">职场短剧</a>
+        <a href="#fantasy">奇幻短剧</a>
+        <a href="#notes">资料说明</a>
+      </div>
+    </div>
+    <small>黄果短剧官网 · 爱情、轻喜、职场与奇幻题材作品资料索引</small>
+    <small>本页内容为作品资料整理，用于题材分类与内容了解。</small>
+  </div>
+</footer>
+
+</body>
+</html>
